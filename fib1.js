@@ -6,7 +6,6 @@ const fib=function(num) {
 }
 server.on('request',function(req,res){
   const url = req.url.toString().substr(1);
-	console.log("URL="+url);
   let n=parseInt(url);
   let str;
   if(isNaN(n) || n<=0){
